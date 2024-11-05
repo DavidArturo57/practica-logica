@@ -31,9 +31,23 @@ const maxNumber = Math.max(...numbers);
 
 console.log("El número más alto es: " + maxNumber);
 
-//*--------Ejercicio 3: Alarma--------
+//*----------Ejercicio 3: Alarma----------
 const segundos = prompt("¿Cuántos segundos quieres esperar hasta que se active la alarma?");
 
 setTimeout(() => {
     console.log(`Time for bed after ${segundos} seconds`);
 }, segundos * 1000);
+
+//*---------Ejercicio 4: Palíndromo.--------
+// Pedir al usuario una palabra o frase
+const input = prompt("Introduce una palabra o frase:");
+
+// Limpiar la entrada: eliminar espacios, puntuación y convertir a minúsculas
+const cleanedInput = input.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+
+// Comparar si la cadena limpia es igual a su reverso
+if (cleanedInput === cleanedInput.split("").reverse().join("")) {
+    console.log("¡Es un palíndromo!");
+} else {
+    console.log("No es un palíndromo.");
+}

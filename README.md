@@ -13,3 +13,7 @@ Escribe un programa que pida 10 números. Utilizando operadores lógicos y cualq
 Escriba un programa que pregunte al usuario la cantidad de segundos necesarios hasta que se ejecute una alarma (mensaje) junto con un texto para mostrar una vez que hayan pasado esos segundos en tiempo real.
 
 Ejemplo de resultado: "Time for bed after 10 seconds".
+
+## Ejercicio 4: Palíndromo.
+
+Escriba un programa que solicite una palabra o frase (puede estar en mayúsculas, tener espacios y puntuación). Determine si la frase o palabra es un palíndromo o no. Ignore la puntuación, los espacios y las letras mayúsculas.
