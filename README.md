@@ -21,3 +21,9 @@ Escriba un programa que solicite una palabra o frase (puede estar en mayúsculas
 ## Ejercicio 5: Factorial.
 
 Escriba un programa que solicite un número entero n . Donde  1 <= n. Resuelva esto usando recursión.
+
+## Ejercicio 6: Matriz plana.
+
+Escriba un programa que tome la siguiente matriz anidada y la aplane (la convierta en una matriz unidimensional). Utilice cualquier tipo de algoritmo que desee, como devoluciones de llamadas, recursión, etc.
+
+let multiDimension = [1, [2, 3, [4, 5, [6]]]];

@@ -71,3 +71,22 @@ if (n >= 1 && n <= 20) {
     console.log("Por favor, ingresa un número en el rango válido (1 <= n <= 20).");
 }
 
+//*---------Ejercicio 6: Matriz plana.-----------
+const multiDim = [1, [2, 3, [4, 5, [6]]]];
+
+function aplanar(a) {
+  const result = [];
+  
+  for (let i = 0; i < a.length; i++) {
+    if (Array.isArray(a[i])) {
+      result.push(...aplanar(a[i]));  
+    } else {
+      result.push(a[i]);  
+    }
+  }
+
+  return result;
+}
+
+const array = aplanar(multiDim);
+console.log("Resultado matriz:",array);
