@@ -13,4 +13,18 @@ moviesArray.forEach(peli => {
     console.log(`The film "${peli}" is one of my favorites.`);
 });
 
+//*--------Ejercicio 2: Número más alto--------
+const numbers = [];
+for (let i = 0; i < 10; i++) {
+    const num = parseFloat(prompt("Ingresa el número #" + (i + 1))); 
+    numbers.push(num); 
+}
+
+console.log("Los números ingresados son: " + numbers);
+
+const maxNumber = Math.max(...numbers);
+
+console.log("El número más alto es: " + maxNumber);
+
+
 
