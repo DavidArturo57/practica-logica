@@ -9,9 +9,14 @@ console.log(`Nombre de usuario: ${usuario}`);
 console.log(`Edad: ${edad}`);
 console.log("Mis películas favoritas:");
 
-moviesArray.forEach(peli => {
-    console.log(`The film "${peli}" is one of my favorites.`);
-});
+
+if (moviesArray.length === 0 || moviesArray.every(peli => peli === "")) {
+    console.log("No se han ingresado películas.");
+} else {
+    moviesArray.forEach(peli => {
+        console.log(`The film "${peli}" is one of my favorites.`);
+    });
+}
 
 //*--------Ejercicio 2: Número más alto--------
 const numbers = [];
@@ -26,5 +31,9 @@ const maxNumber = Math.max(...numbers);
 
 console.log("El número más alto es: " + maxNumber);
 
+//*--------Ejercicio 3: Alarma--------
+const segundos = prompt("¿Cuántos segundos quieres esperar hasta que se active la alarma?");
 
-
+setTimeout(() => {
+    console.log(`Time for bed after ${segundos} seconds`);
+}, segundos * 1000);
