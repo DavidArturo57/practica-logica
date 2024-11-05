@@ -17,3 +17,7 @@ Ejemplo de resultado: "Time for bed after 10 seconds".
 ## Ejercicio 4: Palíndromo.
 
 Escriba un programa que solicite una palabra o frase (puede estar en mayúsculas, tener espacios y puntuación). Determine si la frase o palabra es un palíndromo o no. Ignore la puntuación, los espacios y las letras mayúsculas.
+
+## Ejercicio 5: Factorial.
+
+Escriba un programa que solicite un número entero n . Donde  1 <= n. Resuelva esto usando recursión.

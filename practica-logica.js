@@ -51,3 +51,23 @@ if (cleanedInput === cleanedInput.split("").reverse().join("")) {
 } else {
     console.log("No es un palíndromo.");
 }
+
+//*---------Ejercicio 5: Factorial.-----------
+// Función recursiva para calcular el factorial
+function factorial(n) {
+    if (n === 0 || n === 1) {
+        return 1;  // Caso base: el factorial de 0 y 1 es 1
+    } else {
+        return n * factorial(n - 1);  // Llamada recursiva
+    }
+}
+
+let n = parseInt(prompt("Introduce un número entero :"));
+
+if (n >= 1 && n <= 20) {
+    // Calcular y mostrar el factorial
+    console.log("El factorial de " + n + " es " + factorial(n));
+} else {
+    console.log("Por favor, ingresa un número en el rango válido (1 <= n <= 20).");
+}
+
