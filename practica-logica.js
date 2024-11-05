@@ -62,7 +62,7 @@ function factorial(n) {
     }
 }
 
-let n = parseInt(prompt("Introduce un número entero :"));
+let n = prompt("Introduce un número entero :");
 
 if (n >= 1 && n <= 20) {
     // Calcular y mostrar el factorial
